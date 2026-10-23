@@ -15,3 +15,10 @@
 - Request rate: 3.386077 requests/s
 - p(95): 661.13 ms
 ถึงจะมีผู้ใช้จำลอง 5 คนทำงานตลอด 20 วินาที แต่แต่ละคนต้องรอ 1 วินาทีจากคำสั่ง sleep(1) หลังส่ง request และยังต้องรอเซิร์ฟเวอร์ตอบกลับด้วย ทำให้แต่ละรอบใช้เวลามากกว่า 1 วินาที จึงส่ง request ได้ไม่ถึง 5 requests ต่อวินาที
+
+## Step 0.3, A fixed number of iterations:
+
+- Command: k6 run --vus 5 --iterations 20 01-first-test.js
+- iterations: 20 iterations
+duration คือ การกำหนดเวลาที่ต้องการทดสอบ ส่วน iterations คือ การกำหนดจำนวนรอบที่ต้องการให้ทำงาน โดยการทดสอบนี้จะหยุดเมื่อทำครบ 20 รอบ
+
