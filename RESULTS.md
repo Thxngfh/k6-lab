@@ -26,3 +26,18 @@ duration คือ การกำหนดเวลาที่ต้องก�
 
 - Exit code (ปกติ, P95 = 1500 ms): 0
 - Exit code (เข้มงวด, P95 = 300 ms): 99
+
+
+## Step 0.7, From a requirement to thresholds
+
+- Normal requirement:
+  - p(95): 476.28 ms — Passed
+  - p(99): 568.06 ms — Passed
+  - Request failure rate: 0.00% — Passed
+  - Checks: 100.00% — Passed
+
+- Modified requirement:
+  - Changed threshold: p(95) < 300 ms
+  - Measured p(95): 537.1 ms — Failed
+  - Exit code: 99
+
