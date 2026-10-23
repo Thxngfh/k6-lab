@@ -22,3 +22,7 @@
 - iterations: 20 iterations
 duration คือ การกำหนดเวลาที่ต้องการทดสอบ ส่วน iterations คือ การกำหนดจำนวนรอบที่ต้องการให้ทำงาน โดยการทดสอบนี้จะหยุดเมื่อทำครบ 20 รอบ
 
+## Step 0.6: Thresholds
+
+- Exit code (ปกติ, P95 = 1500 ms): 0
+- Exit code (เข้มงวด, P95 = 300 ms): 99
