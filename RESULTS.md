@@ -1,10 +1,11 @@
 # k6 Lab Results
 
-## Step 0.1: First Test
+## Step 0.1, http_req_duration:
 
-- HTTP status: 200
-- Checks passed: 1/1 (100%)
-- HTTP requests: 1
-- Average response time: 293.76 ms
-- p(95) response time: 293.76 ms
-- Failed requests: 0%
+- avg: 293.76 ms
+- min: 293.76 ms
+- med: 293.76 ms
+- max: 293.76 ms
+- p(90): 293.76 ms
+- p(95): 293.76 ms
+
